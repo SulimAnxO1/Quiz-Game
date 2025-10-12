@@ -1,46 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/CSS/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/CSS/style.css" />
     <title>Quiz Game</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="screen active" id="start-screen">
-            <h1>Quiz Time!</h1>
-            <p>Test your knowledge with some fun questions</p>
-            <button id="start-btn">Start Quiz</button>
+      <div class="screen active" id="start-screen">
+        <h1>Quiz Time!</h1>
+        <p>Test your knowledge with some fun questions</p>
+        <button id="start-btn">Start Quiz</button>
+      </div>
+      <div class="screen" id="quiz-screen">
+        <div class="quiz-header">
+          <h2 id="question-text">Question goes here</h2>
+          <div class="quiz-info">
+            <p>
+              Question <span id="current-question">1</span> of <span>5</span>
+            </p>
+            <p>Score: <span id="score">0</span></p>
+          </div>
         </div>
-        <div class="screen" id="quiz-screen">
-            <div class="quiz-header">
-                <h2 id="question-text">Question goes here</h2>
-                <div class="quiz-info">
-                    <p>
-                        Question <span id="current-question">1</span> of <span>5</span>
-                    </p>
-                    <p>
-                        Score: <span id="score">0</span>
-                    </p>
-                </div>
-            </div>
-            <div class="answers-container" id="answers-container" >
-                <!--Answer buttons will be inserted here from JS-->
-            </div>
-            <div class="progres-bar">
-                <div class="progres" id="progres"></div>
-            </div>
-            <div class="screen active" id="result-screen">
-                <h1>Quiz Result</h1>
-                <div class="result-info">
-                    <p>You scored <span id="final-score">0</span> out of <span id="max-scroe">5</span></p>
-                    <div id="result-massage">Good Job!</div>
-                </div>
-                <button id="restart-btn">Restart Quiz</button>
-            </div>
+        <div class="answers-container" id="answers-container">
+          <!--Answer buttons will be inserted here from JS-->
         </div>
+        <div class="progres-bar">
+          <div class="progres" id="progres"></div>
+        </div>
+        <div class="screen active" id="result-screen">
+          <h1>Quiz Result</h1>
+          <div class="result-info">
+            <p>
+              You scored <span id="final-score">0</span> out of
+              <span id="max-scroe">5</span>
+            </p>
+            <div id="result-massage">Good Job!</div>
+          </div>
+          <button id="restart-btn">Restart Quiz</button>
+        </div>
+      </div>
     </div>
     <script src="JavaScript/script.js"></script>
-</body>
+  </body>
 </html>

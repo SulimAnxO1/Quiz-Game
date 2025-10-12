@@ -80,7 +80,12 @@ startButton.addEventListener("click", startQuiz);
 restartButton.addEventListener("click", restartQuiz);
 
 function startQuiz() {
-  console.log("quiz started");
+  currentQuestionIndex = 0;
+  score = 0;
+  scoreSpan.textContent = 0;
+
+  startScreen.classList.remove("active");
+  quizScreen.classList.add("active");
 }
 
 function restartQuiz() {

@@ -7,15 +7,15 @@ Test your knowledge across multiple questions and get instant feedback on each a
 
 ## 🌐 Live Preview
 
-👉 [quiz-game-xo1.netlify.app](https://quiz-game-xo1.netlify.app/)
+👉 [Quiz-Game Demo](https://quiz-game-xo1.netlify.app/)
 
 ---
 
 ## 🖼️ Preview
 
-|                 Start Screen                 |               Quiz Screen                |               Correct Answer               |              Wrong Answer              |                Result Screen                |
-| :------------------------------------------: | :--------------------------------------: | :----------------------------------------: | :------------------------------------: | :-----------------------------------------: |
-| ![Start Screen](./Image/1startingscreen.png) | ![Quiz Screen](./Image/2quizpreview.png) | ![Correct Answer](./Image/3correctans.png) | ![Wrong Answer](./Image/4wrongans.png) | ![Result Screen](./Image/5resultscreen.png) |
+|                Start Screen                 |               Quiz Screen               |              Correct Answer               |             Wrong Answer              |               Result Screen                |
+| :-----------------------------------------: | :-------------------------------------: | :---------------------------------------: | :-----------------------------------: | :----------------------------------------: |
+| ![Start Screen](./Image/startingscreen.png) | ![Quiz Screen](./Image/quizpreview.png) | ![Correct Answer](./Image/correctans.png) | ![Wrong Answer](./Image/wrongans.png) | ![Result Screen](./Image/resultscreen.png) |
 
 ---
 
@@ -35,6 +35,7 @@ Quiz Game/
 │ └──4wrongans.png
 │ └──5resultscreen.png
 └── Readme.md # README File
+│
 
 ---
 

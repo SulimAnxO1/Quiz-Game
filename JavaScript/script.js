@@ -140,7 +140,7 @@ function selectAnswer(event) {
   setTimeout(() => {
     currentQuestionIndex++;
 
-    // Check for more Questions or is Quiz is over
+    // Check for more Questions or if the Quiz is over
     if (currentQuestionIndex < quizQuestions.length) {
       showQuestion();
     } else {

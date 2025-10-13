@@ -28,12 +28,12 @@ Quiz Game/
 │ └── style.css # Styling and layout
 ├── JavaScript/
 │ └── script.js # Game logic and quiz flow control
-└── Image/ # Preview Images
-├── startingscreen.png
-├── quizpreview.png
-├── correctans.png
-├── wrongans.png
-└── resultscreen.png
+├── Image/ # Preview Images
+│ ├── startingscreen.png
+│ ├── quizpreview.png
+│ ├── correctans.png
+│ ├── wrongans.png
+│ └── resultscreen.png
 └── Readme.md # README File
 
 ---

@@ -19,25 +19,6 @@ Test your knowledge across multiple questions and get instant feedback on each a
 
 ---
 
-## 📁 File Overview
-
-📂 Quiz Game/
-│
-├── index.html # Main quiz structure
-├── 📁 CSS/
-│ └── style.css # Styling and layout
-├── 📁 JavaScript/
-│ └── script.js # Game logic and quiz flow control
-├── 📁 Image/ # Preview Images
-│ ├── startingscreen.png
-│ ├── quizpreview.png
-│ ├── correctans.png
-│ ├── wrongans.png
-│ └── resultscreen.png
-└── README.md # README File
-
----
-
 ## 🧩 Features
 
 - 🧠 Interactive quiz system with multiple questions

@@ -78,7 +78,7 @@ body {
   margin-bottom: 25px;
 }
 
-.answers-btn {
+.answer-btn {
   background-color: hsl(14, 100%, 83%);
   color: hsl(0, 0%, 20%);
   border: 2px solid hsl(14, 100%, 76%);
@@ -88,6 +88,7 @@ body {
   text-align: left;
 }
 
+/* change hover bgc bc */
 .answer-btn:hover {
   background-color: #eadbc8;
   border-color: #dac0ae;
@@ -107,7 +108,8 @@ body {
 
 .progress-bar {
   height: 10px;
-  background-color: hsl(45, 100%, 95%);
+  background-color: hsl(0, 0%, 95%);
+  border: 1px solid hsl(0, 0%, 90%);
   border-radius: 5px;
   overflow: hidden;
   margin-top: 20px;

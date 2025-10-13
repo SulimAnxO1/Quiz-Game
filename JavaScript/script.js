@@ -86,8 +86,91 @@ function startQuiz() {
 
   startScreen.classList.remove("active");
   quizScreen.classList.add("active");
+
+  showQuestion();
+}
+
+function showQuestion() {
+  // reset state
+  answersDisabled = false;
+
+  const currentQuestion = quizQuestions[currentQuestionIndex];
+  currentQuestionSpan.textContent = currentQuestionIndex + 1;
+
+  const progressPercent = (currentQuestionIndex / quizQuestions.length) * 100;
+  progressBar.style.width = progressPercent + "%";
+
+  questionText.textContent = currentQuestion.question;
+
+  answerContainer.innerHTML = "";
+
+  currentQuestion.answers.forEach((answer) => {
+    const button = document.createElement("button");
+    button.textContent = answer.text;
+    button.classList.add("answer-btn");
+
+    button.dataset.correct = answer.correct;
+    button.addEventListener("click", selectAnswer);
+
+    answerContainer.appendChild(button);
+  });
+}
+
+function selectAnswer(event) {
+  // optimization check
+  if (answersDisabled) return;
+  answersDisabled = true;
+
+  const selectButton = event.target;
+  const isCorrect = selectButton.dataset.correct === "true";
+
+  Array.from(answerContainer.children).forEach((button) => {
+    if (button.dataset.correct === "true") {
+      button.classList.add("correct");
+    } else if (button === selectButton) {
+      button.classList.add("incorrect");
+    }
+  });
+
+  if (isCorrect) {
+    score++;
+    scoreSpan.textContent = score;
+  }
+
+  setTimeout(() => {
+    currentQuestionIndex++;
+
+    // Check for more Questions or is Quiz is over
+    if (currentQuestionIndex < quizQuestions.length) {
+      showQuestion();
+    } else {
+      showResults();
+    }
+  }, 2000);
+}
+
+function showResults() {
+  quizScreen.classList.remove("active");
+  resultScreen.classList.add("active");
+
+  finalScoreSpan.textContent = score;
+
+  const percentage = (score / quizQuestions.length) * 100;
+
+  if (percentage === 100) {
+    resultMessage.textContent = "Perfect! You're a genius!";
+  } else if (percentage >= 80) {
+    resultMessage.textContent = "Great job! You know your stuff!";
+  } else if (percentage >= 60) {
+    resultMessage.textContent = "Good effort! Keep learning!";
+  } else if (percentage >= 40) {
+    resultMessage.textContent = "Not bad! Try again to improve!";
+  } else {
+    resultMessage.textContent = "Keep studying! You'll get better!";
+  }
 }
 
 function restartQuiz() {
-  console.log("quiz re-started");
+  resultScreen.classList.remove("active");
+  startQuiz();
 }

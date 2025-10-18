@@ -7,9 +7,11 @@ Test your knowledge across multiple questions and get instant feedback on each a
 
 ## 🖼️ Preview
 
-|                Start Screen                 |               Quiz Screen               |              Correct Answer               |             Wrong Answer              |               Result Screen                |
-| :-----------------------------------------: | :-------------------------------------: | :---------------------------------------: | :-----------------------------------: | :----------------------------------------: |
-| ![Start Screen](./Image/startingscreen.png) | ![Quiz Screen](./Image/quizpreview.png) | ![Correct Answer](./Image/correctans.png) | ![Wrong Answer](./Image/wrongans.png) | ![Result Screen](./Image/resultscreen.png) |
+![Start Screen](./Image/startingscreen.png)
+![Quiz Screen](./Image/quizpreview.png)
+![Correct Answer](./Image/correctans.png)
+![Wrong Answer](./Image/wrongans.png)
+![Result Screen](./Image/resultscreen.png)
 
 ---
 

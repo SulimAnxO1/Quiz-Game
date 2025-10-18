@@ -5,12 +5,6 @@ Test your knowledge across multiple questions and get instant feedback on each a
 
 ---
 
-## 🌐 Live Preview
-
-👉 [Quiz-Game Demo](https://quiz-game-xo1.netlify.app/)
-
----
-
 ## 🖼️ Preview
 
 |                Start Screen                 |               Quiz Screen               |              Correct Answer               |             Wrong Answer              |               Result Screen                |
@@ -35,5 +29,3 @@ Test your knowledge across multiple questions and get instant feedback on each a
 - **HTML5** – Page structure
 - **CSS3** – Styling, layout & transitions
 - **JavaScript (ES6)** – Core logic, DOM handling & game control
-
----
